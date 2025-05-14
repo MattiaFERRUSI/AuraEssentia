@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     const carouselItems = document.querySelector(".carousel-items");
 
     try {
-        const response = await fetch("../JSON/product.json"); // Percorso corretto del JSON
+        const response = await fetch("Aurea/JSON/product.json"); 
         const products = await response.json();
 
         // Genera dinamicamente i prodotti nel carosello
