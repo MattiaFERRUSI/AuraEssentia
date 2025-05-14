@@ -1,0 +1,39 @@
+.footer {
+    background-color: #2e2e2e;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    color: #B8AC87;
+    margin-bottom: 1rem;
+}
+
+.social-icons a img {
+    width: 24px;
+    margin: 0 10px;
+}
+
+.footer-copy {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+.footer a{
+color: #fff;
+}
+.social-icons{
+    font-size: 1.4rem;
+}

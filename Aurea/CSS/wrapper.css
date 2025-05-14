@@ -1,0 +1,31 @@
+.categorie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adatta il numero di colonne */
+    padding: 1.5vh;
+    gap: 0.5vh;
+    background-color: #F8F8F8;
+    
+  }
+  .categoria-item img {
+    width: 100%; /* Si adatta automaticamente al contenitore */
+    aspect-ratio: 4/3; /* Mantiene proporzioni coerenti */
+    object-fit: cover; /* Ritaglia senza deformare */
+    border-radius: 10px;
+  }
+  .categoria-item {
+    padding: 0.5vw; /* Aggiunge spazio uniforme sopra, sotto, a destra e a sinistra */
+    text-align: center;
+  }
+  .categorie-wrapper h1{
+    text-align: center;
+    color: #B8AC87;
+    font-size: 1.7rem;
+    text-decoration: underline;
+  }
+  .categorie-wrapper{
+    padding: 5vh;
+  }
+  .categorie-wrapper h2{
+    font-size: 1.4rem;
+     color: #B8AC87
+  }

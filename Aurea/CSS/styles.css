@@ -1,0 +1,202 @@
+/* RESET BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: 100%; /* 1rem corrisponde a 16px, usa unità relative per scalare */
+}
+
+body {
+  font-family: 'Tagesschrift', sans-serif;
+  line-height: 1.5;
+  color: #333;
+  /* La pagina si adatta a tutta la larghezza, mantenuta fluida */
+  width: 100%;
+}
+
+/* Rendere le immagini responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Se hai un contenitore principale, assicurati che si adatti al 100% */
+.page-content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.top-banner {
+  display: flex;
+  align-items: center;        
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  padding: 0.4rem;  
+  font-size: 1.0rem;   
+  gap: 0.4rem;     
+}
+
+/* bottoni della foto home  */
+/* Sezione Hero: l'immagine come sfondo */
+.hero-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-section img {
+  width: 100%;
+  display: block;
+}
+
+/* Contenitore dei bottoni, centrato assolutamente sopra l'immagine */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 0.8rem; /* Spazio tra bottoni */
+  justify-content: center;
+}
+
+/* Stile base per i bottoni (versione ridotta) */
+.btn {
+  min-width: 6rem;              /* Larghezza minima ridotta */
+  padding: 0.4rem 0.8rem;         /* Padding ridotto per bottoni più compatti */
+  font-size: 0.75rem;           /* Font un po' più piccolo (circa 12px) */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;      /* Leggermente ridotto rispetto a prima */
+  border-radius: 0.2rem;        /* Border-radius ridotto */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-family: 'Tagesschrift', sans-serif;
+  width: auto;
+}
+
+/* Bottone primario */
+/* Stili per dispositivi mobile fino a 520px */
+
+/* Stili per dispositivi mobile fino a 520px rimangono invariati */
+
+.btn-primary {
+  background-color: #B8AC87;
+  color: #000;
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #fff;
+  color: #B8AC87;
+}
+
+.btn-secondary {
+  background-color: black;
+  color: white;
+  border: 0.125rem solid black;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #B8AC87;
+  border-color: rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+/* Media query per dispositivi da 520px in su: bottoni più "cicciotti" */
+@media (min-width: 520px) {
+  .btn {
+    /* Aumenta ulteriormente il padding per rendere i bottoni più pieni */
+    padding: 0.7rem 1.4rem;
+    /* Incrementa leggermente la dimensione del font */
+    font-size: 0.9rem;
+    /* Amplia leggermente la larghezza minima */
+    min-width: 7.5rem;
+    /* Aggiusta il border-radius per mantenere le proporzioni */
+    border-radius: 0.35rem;
+    letter-spacing: 0.0625rem;
+  }
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #B8AC87;
+  border-color: rgba(255, 255, 255, 0.5);
+  color: black; /* La scritta diventa nera */
+}
+
+.btn {
+  display: inline-block; /* Evita che riempiano tutta la larghezza */
+}
+@media (max-width: 430px) {
+  .hero-section {
+    margin-top: 2rem; /* Aggiunge spazio extra sotto la navbar */
+    padding-top: 2rem; /* Ottimizza lo spazio interno */
+  }
+
+  .hero-content {
+    gap: 1.5rem; /* Distanzia i bottoni tra loro */
+  }
+
+  .btn {
+    padding: 0.1rem 0.2rem; /* Rende i bottoni più compatti */
+  }
+}
+.bottom-banner {
+  position: relative; /* NON fisso, rimane nel flusso della pagina */
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 0.2rem;
+  overflow: hidden;
+ 
+}
+
+
+.marquee {
+  display: flex;
+  gap: 2rem; /* Spazio tra gli elementi */
+  white-space: nowrap;
+  animation: scroll 8s linear infinite; /* Animazione */
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.whatsapp-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px; /* Posiziona l'icona in basso a destra */
+  background-color: #25D366; /* Verde WhatsApp */
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 24px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1); /* Effetto di ingrandimento al passaggio del mouse */
+}
+h1, h2, h3 {
+  font-weight: 200; /* Peso medio per una lettura chiara */
+}
+
